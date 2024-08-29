@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>
+        Tente abrir esse site em varios dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.
+    </p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="Arknights_KyaaaSkadi_P.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="Arknights_KyaaaSkadi_M.png" type="image/png">
+        <img src="Arknights_KyaaaSkadi_G.png" alt="Imagem flexível">
+    </picture>
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir aúdios em HTML5.</p>
+    <!--<audio src="midia/SocietysDream_MiniVandals.mp3" controls autoplay loop="true"></audio>  MP3 WAV OGG -->
+    <audio preload="metadata" controls loop>
+        <source src="midia/SocietysDream_MiniVandals.mp3" type="audio/mpeg">
+        <source src="midia/SocietysDream_MiniVandals.ogg" type="audio/ogg">
+        <source src="midia/SocietysDream_MiniVandals.wav" type="audio/wav">
+        <p>
+            infelizmente seu navegador não consegue reproduzir o aúdio.
+            <a href="midia/SocietysDream_MiniVandals.mp3">Clique aqui para baixar o arquivo MP3</a>
+        </p>
+    </audio>
+</body>
+</html>
