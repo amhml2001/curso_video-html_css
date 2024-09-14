@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+body {
+    margin: 0%;
+}
+
+img#espaco {
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+img#astronauta {
+    position: absolute;
+    display: block;
+    max-height: 500px;
+    max-width: 500px;
+    top: 50%;
+    left: 50%;
+    margin: auto;
+    transform: translate(-50%, -50%);
+}
