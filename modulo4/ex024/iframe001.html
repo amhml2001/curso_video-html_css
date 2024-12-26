@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Estudeos de iframe</title>
+   <style>
+      /*File?*/
+      /*CSSS > Inline > Default*/
+      iframe {
+         width: 500px;
+         height: 500px;
+         border: dashed red 1px;
+      }
+   </style>
+</head>
+<body>
+   <h1>Testando o uso de iframe</h1>
+   <p>Acessando o site do <a href="https://www.cursoemvideo.com" target="_blank">curso em video</a> para aprender a programar</p>
+   <p>Acessando o site do 
+      <!-- Alguns sites tem proteção contra usao de iframe por terceiros.
+      Ele tem utilidade mas não é 100% seguro e portanto pode não funcionar
+      para acessar alguns sites -->
+      <iframe src="https://www.cursoemvideo.com" frameborder="1">
+         <a href="https://www.cursoemvideo.com">Curso em Vídeo</a>
+      </iframe>
+      
+      <!-- Tamanho padrão 300x150px -->
+      <!-- Dependendo do navegador alguns parametros podem não funcionar. Ex: scrolling(auto(default), yes, no)
+       As bordas do iframe podem ser customizadas igual a qualquer outra borda no CSS -->
+      para aprender a programar</p>
+      <p>o site no <iframe src="https://gustavoguanabara.github.io/" frameborder="0" height="200px" width="200px" scrolling="no">
+         <!-- Se não for compatpivel, entre as tags do iframe colocamos a mensagem ou link que será mostrada nestes casos -->
+         <a href="https://gustavoguanabara.github.io/">Github</a>
+      </iframe> também é muito legal</p>
+</body>
+</html>

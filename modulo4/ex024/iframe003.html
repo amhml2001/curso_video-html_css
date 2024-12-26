@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Uso iframes</title>
+   <style>
+      body {
+         font-family: Arial, Helvetica, sans-serif;
+      }
+
+      iframe#tela {
+         width: 95vw;
+         height: 400px;
+         border: 2px solid black;
+      }
+   </style>
+</head>
+<body>
+   <h1>Faça uma escolha</h1>
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque voluptatem cupiditate, cum rerum placeat nihil, eum quo porro, voluptas neque vel beatae ducimus suscipit molestias? Magnam iure ut ea non! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed nisi alias laudantium quaerat quod doloremque quos atque debitis modi tempora quam sit, ducimus vel, delectus odio perferendis et earum aliquam.</p>
+
+   <!-- o target é o nome do iframe -->
+   <ul>
+      <li><a href="paginas-extras/pag001.html" target="frame">Primeira Página</a></li>
+      <li><a href="paginas-extras/pag002.html" target="frame">Segunda Página</a></li>
+      <li><a href="paginas-extras/pag003.html" target="frame">Terceira Página</a></li>
+   </ul>
+
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque voluptatem cupiditate, cum rerum placeat nihil, eum quo porro, voluptas neque vel beatae ducimus suscipit molestias? Magnam iure ut ea non! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed nisi alias laudantium quaerat quod doloremque quos atque debitis modi tempora quam sit, ducimus vel, delectus odio perferendis et earum aliquam.</p>
+
+   <!-- é preciso do name nesse exmplo. id é opciolnal nesse caso.
+    se quisermos um valor default só colocar um valor no source -->
+   <iframe id="tela" name="frame" src="" frameborder="0">
+      <p>Infelizmente seu navegador não é compatível</p>
+   </iframe>
+
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum quos similique nostrum reiciendis eveniet, blanditiis exercitationem nihil dolore molestiae laborum, fugiat provident expedita id fugit distinctio vitae. Soluta, maxime quis? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro asperiores totam vero molestiae rem ipsum deleniti repudiandae eius est aperiam veniam ab quos fuga, voluptates harum fugit at id veritatis.</p>
+</body>
+</html>
